@@ -21,10 +21,3 @@ fn main() -> Result<(), ExitFailure> {
     Ok(())
 }
 
-#[test]
-
-fn find_match() {
-    let mut result = Vec::new();
-    lib::find_matches("lorem ipsum\ndolor sit amet", "lorem", &mut result);
-    assert_eq!(result, b"lorem ipsum\n");
-}
